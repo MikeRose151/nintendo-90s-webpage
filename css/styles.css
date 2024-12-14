@@ -1,0 +1,110 @@
+body {
+  background-image: url("../images/background.png");
+  background-size: auto; /* Adjust as needed */
+
+  color: #ffffff;
+  font-family: "Georgia", serif;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+}
+
+.welcome-message {
+  font-family: "Orbitron", sans-serif;
+  text-shadow: #eeee00 0 0 4px;
+  font-size: 32px;
+  text-align: center;
+  width: 100%;
+}
+
+.logo-bar {
+  border-top: 8px solid #bababa;
+  border-bottom: 8px solid #bababa;
+  display: flex;
+  height: 100px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-driver-overlap-container {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.homepage-logo {
+  position: relative;
+  height: 60px;
+  z-index: 2;
+}
+
+.driver-marquee {
+  position: absolute;
+  bottom: -6px;
+  width: 100%;
+  z-index: 1;
+}
+
+.driver-marquee img {
+  height: 4em;
+}
+
+main {
+  margin: 24px;
+}
+
+h1 {
+  font-family: "VT323";
+  color: rgb(255, 0, 0);
+  font-size: 48px;
+}
+
+h2 {
+  color: red;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.feature-list a {
+  color: red;
+}
+
+.feature-list ul {
+  list-style: none;
+}
+
+.feature-list-item {
+  display: flex;
+  justify-content: left;
+}
+
+.feature-list-item-image {
+  width: 100px;
+}
+
+.footer-menu a {
+  color: #eeee00;
+}
+
+.footer-menu ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space out the three sections */
+  align-items: center;
+  max-width: 400px; /* Set a width for the menu */
+  margin: 0 auto; /* Center the entire menu container */
+}
+
+.footer-menu li {
+  text-align: center;
+  margin: 0 10px;
+}
