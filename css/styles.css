@@ -98,9 +98,9 @@ h2 {
   padding: 0;
   margin: 0;
   display: flex; /* Flexbox for layout */
-  justify-content: space-between; /* Space out the three sections */
+  justify-content: space-around; /* Space out the three sections */
   align-items: center;
-  max-width: 400px; /* Set a width for the menu */
+  max-width: 200px;
   margin: 0 auto; /* Center the entire menu container */
 }
 
