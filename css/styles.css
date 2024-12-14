@@ -1,3 +1,5 @@
+/* Global */
+
 body {
   background-image: url("../images/background.png");
   background-size: auto; /* Adjust as needed */
@@ -8,6 +10,18 @@ body {
   margin: 0;
   padding: 0;
 }
+
+main {
+  margin: 24px;
+}
+
+h1 {
+  font-family: "VT323";
+  color: rgb(255, 0, 0);
+  font-size: 48px;
+}
+
+/* Header */
 
 header {
   width: 100%;
@@ -56,17 +70,9 @@ header {
   height: 4em;
 }
 
-main {
-  margin: 24px;
-}
+/* Homepage - Feature list */
 
-h1 {
-  font-family: "VT323";
-  color: rgb(255, 0, 0);
-  font-size: 48px;
-}
-
-h2 {
+.feature-list h2 {
   color: red;
   font-weight: normal;
   text-decoration: underline;
@@ -88,6 +94,41 @@ h2 {
 .feature-list-item-image {
   width: 100px;
 }
+
+/* Present */
+
+.selection-background {
+  background-color: #d6f5d6; /* Light green background */
+  padding: 20px;
+  display: flex; /* Optional: Ensures the grid is centered */
+  justify-content: center;
+}
+
+.selection-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+  grid-gap: 10px; /* Spacing between items */
+}
+
+.selection-grid-item {
+  width: 100px;
+  height: 100px;
+  background-color: #000; /* Default black background */
+  color: #fff; /* Text color */
+  display: flex; /* Center content */
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif; /* Text styling */
+  text-transform: uppercase; /* SM64 text in uppercase */
+  cursor: pointer; /* Indicate clickable items */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.selection-grid-item:hover {
+  background-color: #00f; /* Change to blue on hover */
+}
+
+/* Footer */
 
 .footer-menu a {
   color: #eeee00;
