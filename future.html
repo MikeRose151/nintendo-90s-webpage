@@ -14,7 +14,48 @@
   <body>
     <div id="header-placeholder"></div>
     <main>
+      <a href="index.html">&lt;&lt; Back to Homepage</a>
       <h1>FUTURE</h1>
+      <div class="future-description-text">
+        What will be next for Nintendo? Perhaps a Wii (whatever that might be)
+        or a touch screen device?! Let us know if you have any other ideas...
+      </div>
+      <div>
+        <section class="idea-form-section">
+          <form id="ideaForm">
+            <label for="name">Your Name:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            /><br /><br />
+
+            <label for="idea">Your Idea:</label><br />
+            <textarea
+              id="idea"
+              name="idea"
+              rows="4"
+              placeholder="Describe your console idea..."
+              required
+            ></textarea
+            ><br /><br />
+
+            <button type="submit">Submit Idea</button>
+          </form>
+        </section>
+
+        <!-- Display Submitted Ideas -->
+        <section class="idea-submissions">
+          <h2>Submitted Ideas</h2>
+          <div id="ideaList">
+            <!-- Submitted ideas will appear here -->
+          </div>
+        </section>
+
+        <script src="js/script.js"></script>
+      </div>
     </main>
     <div id="footer-placeholder"></div>
 

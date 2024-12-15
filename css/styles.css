@@ -21,6 +21,15 @@ h1 {
   font-size: 48px;
 }
 
+h2 {
+  color: red;
+  font-weight: normal;
+}
+
+a {
+  color: yellow;
+}
+
 /* Header */
 
 header {
@@ -72,14 +81,9 @@ header {
 
 /* Homepage - Feature list */
 
-.feature-list h2 {
-  color: red;
-  font-weight: normal;
-  text-decoration: underline;
-}
-
 .feature-list a {
   color: red;
+  text-decoration: underline;
 }
 
 .feature-list ul {
@@ -92,21 +96,35 @@ header {
 }
 
 .feature-list-item-image {
+  height: 100px;
   width: 100px;
+  margin: 8px 16px;
 }
 
 /* Present */
 
 .selection-background {
-  background-color: #d6f5d6; /* Light green background */
+  background-color: #bababa; /* Light green background */
   padding: 20px;
   display: flex; /* Optional: Ensures the grid is centered */
   justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+  justify-self: center;
+  align-items: center;
+}
+
+.selection-title {
+  font-size: 32px;
+  color: yellow;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  margin-bottom: 8px;
 }
 
 .selection-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+  grid-template-columns: repeat(4, 1fr); /* 5 items per row */
   grid-gap: 10px; /* Spacing between items */
 }
 
@@ -114,18 +132,80 @@ header {
   width: 100px;
   height: 100px;
   background-color: #000; /* Default black background */
-  color: #fff; /* Text color */
   display: flex; /* Center content */
   justify-content: center;
-  align-items: center;
   font-family: sans-serif; /* Text styling */
-  text-transform: uppercase; /* SM64 text in uppercase */
   cursor: pointer; /* Indicate clickable items */
-  transition: background-color 0.3s ease; /* Smooth hover effect */
+  flex-direction: column;
 }
 
-.selection-grid-item:hover {
-  background-color: #00f; /* Change to blue on hover */
+.selection-grid-item img {
+  height: 82px;
+  width: 92px;
+  align-self: center;
+}
+
+.selection-grid-item-image {
+  border: #000 solid 4px;
+}
+.selection-grid-item-image:hover {
+  border: rgb(42, 81, 255) solid 4px;
+}
+
+.selection-grid-item-title {
+  background-color: #505050;
+  color: #252525;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 2px 0px;
+}
+
+/* Future */
+
+.idea-form-section {
+  width: 80%;
+  max-width: 600px;
+}
+
+form {
+  background-color: #3f3f3f;
+  margin-top: 8px;
+  padding: 15px;
+  border: 1px solid #aaaaaa;
+}
+
+input,
+textarea {
+  width: 90%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 2px solid #555;
+  border-radius: 3px;
+  background-color: #222;
+  color: white;
+  font-family: monospace;
+}
+
+button {
+  padding: 4px 12px;
+  background-color: #aaaaaa;
+  color: #3f3f3f;
+  border: black solid 1px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff3333;
+}
+
+.idea-submissions {
+  text-align: left;
+}
+
+.idea-card {
+  margin: 4px 0;
+  border-bottom: white dashed 1px;
 }
 
 /* Footer */
@@ -148,4 +228,8 @@ header {
 .footer-menu li {
   text-align: center;
   margin: 0 10px;
+}
+
+footer p {
+  font-size: 12px;
 }
