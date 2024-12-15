@@ -101,6 +101,13 @@ header {
   margin: 8px 16px;
 }
 
+/* History */
+
+.logo-history {
+  margin-top: 8px;
+  border: solid 1px #bababa;
+}
+
 /* Present */
 
 .selection-background {
@@ -139,10 +146,19 @@ header {
   flex-direction: column;
 }
 
+.selection-grid-item {
+  color: #252525;
+}
+
+.selection-grid-item:hover {
+  color: #bababa;
+}
+
 .selection-grid-item img {
   height: 82px;
   width: 92px;
   align-self: center;
+  color: #252525;
 }
 
 .selection-grid-item-image {
@@ -154,7 +170,6 @@ header {
 
 .selection-grid-item-title {
   background-color: #505050;
-  color: #252525;
   font-size: 12px;
   font-weight: bold;
   text-align: center;
